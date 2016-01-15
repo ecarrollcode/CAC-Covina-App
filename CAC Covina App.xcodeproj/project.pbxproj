@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FA755471C48CB13004AE933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA755461C48CB13004AE933 /* AppDelegate.swift */; };
+		8FA755491C48CB13004AE933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA755481C48CB13004AE933 /* ViewController.swift */; };
+		8FA7554C1C48CB13004AE933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA7554A1C48CB13004AE933 /* Main.storyboard */; };
+		8FA7554E1C48CB13004AE933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA7554D1C48CB13004AE933 /* Assets.xcassets */; };
+		8FA755511C48CB13004AE933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA7554F1C48CB13004AE933 /* LaunchScreen.storyboard */; };
+		8FA7555C1C48CB13004AE933 /* CAC_Covina_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7555B1C48CB13004AE933 /* CAC_Covina_AppTests.swift */; };
+		8FA755671C48CB13004AE933 /* CAC_Covina_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA755661C48CB13004AE933 /* CAC_Covina_AppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FA755581C48CB13004AE933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FA7553B1C48CB13004AE933 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FA755421C48CB13004AE933;
+			remoteInfo = "CAC Covina App";
+		};
+		8FA755631C48CB13004AE933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FA7553B1C48CB13004AE933 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FA755421C48CB13004AE933;
+			remoteInfo = "CAC Covina App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8FA755431C48CB13004AE933 /* CAC Covina App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CAC Covina App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA755461C48CB13004AE933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FA755481C48CB13004AE933 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FA7554B1C48CB13004AE933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FA7554D1C48CB13004AE933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FA755501C48CB13004AE933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FA755521C48CB13004AE933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA755571C48CB13004AE933 /* CAC Covina AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CAC Covina AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA7555B1C48CB13004AE933 /* CAC_Covina_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAC_Covina_AppTests.swift; sourceTree = "<group>"; };
+		8FA7555D1C48CB13004AE933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA755621C48CB13004AE933 /* CAC Covina AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CAC Covina AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA755661C48CB13004AE933 /* CAC_Covina_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAC_Covina_AppUITests.swift; sourceTree = "<group>"; };
+		8FA755681C48CB13004AE933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FA755401C48CB13004AE933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA755541C48CB13004AE933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA7555F1C48CB13004AE933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FA7553A1C48CB13004AE933 = {
+			isa = PBXGroup;
+			children = (
+				8FA755451C48CB13004AE933 /* CAC Covina App */,
+				8FA7555A1C48CB13004AE933 /* CAC Covina AppTests */,
+				8FA755651C48CB13004AE933 /* CAC Covina AppUITests */,
+				8FA755441C48CB13004AE933 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FA755441C48CB13004AE933 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FA755431C48CB13004AE933 /* CAC Covina App.app */,
+				8FA755571C48CB13004AE933 /* CAC Covina AppTests.xctest */,
+				8FA755621C48CB13004AE933 /* CAC Covina AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FA755451C48CB13004AE933 /* CAC Covina App */ = {
+			isa = PBXGroup;
+			children = (
+				8FA755461C48CB13004AE933 /* AppDelegate.swift */,
+				8FA755481C48CB13004AE933 /* ViewController.swift */,
+				8FA7554A1C48CB13004AE933 /* Main.storyboard */,
+				8FA7554D1C48CB13004AE933 /* Assets.xcassets */,
+				8FA7554F1C48CB13004AE933 /* LaunchScreen.storyboard */,
+				8FA755521C48CB13004AE933 /* Info.plist */,
+			);
+			path = "CAC Covina App";
+			sourceTree = "<group>";
+		};
+		8FA7555A1C48CB13004AE933 /* CAC Covina AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FA7555B1C48CB13004AE933 /* CAC_Covina_AppTests.swift */,
+				8FA7555D1C48CB13004AE933 /* Info.plist */,
+			);
+			path = "CAC Covina AppTests";
+			sourceTree = "<group>";
+		};
+		8FA755651C48CB13004AE933 /* CAC Covina AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8FA755661C48CB13004AE933 /* CAC_Covina_AppUITests.swift */,
+				8FA755681C48CB13004AE933 /* Info.plist */,
+			);
+			path = "CAC Covina AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FA755421C48CB13004AE933 /* CAC Covina App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA7556B1C48CB13004AE933 /* Build configuration list for PBXNativeTarget "CAC Covina App" */;
+			buildPhases = (
+				8FA7553F1C48CB13004AE933 /* Sources */,
+				8FA755401C48CB13004AE933 /* Frameworks */,
+				8FA755411C48CB13004AE933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CAC Covina App";
+			productName = "CAC Covina App";
+			productReference = 8FA755431C48CB13004AE933 /* CAC Covina App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FA755561C48CB13004AE933 /* CAC Covina AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA7556E1C48CB13004AE933 /* Build configuration list for PBXNativeTarget "CAC Covina AppTests" */;
+			buildPhases = (
+				8FA755531C48CB13004AE933 /* Sources */,
+				8FA755541C48CB13004AE933 /* Frameworks */,
+				8FA755551C48CB13004AE933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FA755591C48CB13004AE933 /* PBXTargetDependency */,
+			);
+			name = "CAC Covina AppTests";
+			productName = "CAC Covina AppTests";
+			productReference = 8FA755571C48CB13004AE933 /* CAC Covina AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FA755611C48CB13004AE933 /* CAC Covina AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA755711C48CB13004AE933 /* Build configuration list for PBXNativeTarget "CAC Covina AppUITests" */;
+			buildPhases = (
+				8FA7555E1C48CB13004AE933 /* Sources */,
+				8FA7555F1C48CB13004AE933 /* Frameworks */,
+				8FA755601C48CB13004AE933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FA755641C48CB13004AE933 /* PBXTargetDependency */,
+			);
+			name = "CAC Covina AppUITests";
+			productName = "CAC Covina AppUITests";
+			productReference = 8FA755621C48CB13004AE933 /* CAC Covina AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FA7553B1C48CB13004AE933 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ed Carroll";
+				TargetAttributes = {
+					8FA755421C48CB13004AE933 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					8FA755561C48CB13004AE933 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 8FA755421C48CB13004AE933;
+					};
+					8FA755611C48CB13004AE933 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 8FA755421C48CB13004AE933;
+					};
+				};
+			};
+			buildConfigurationList = 8FA7553E1C48CB13004AE933 /* Build configuration list for PBXProject "CAC Covina App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FA7553A1C48CB13004AE933;
+			productRefGroup = 8FA755441C48CB13004AE933 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FA755421C48CB13004AE933 /* CAC Covina App */,
+				8FA755561C48CB13004AE933 /* CAC Covina AppTests */,
+				8FA755611C48CB13004AE933 /* CAC Covina AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FA755411C48CB13004AE933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA755511C48CB13004AE933 /* LaunchScreen.storyboard in Resources */,
+				8FA7554E1C48CB13004AE933 /* Assets.xcassets in Resources */,
+				8FA7554C1C48CB13004AE933 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA755551C48CB13004AE933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA755601C48CB13004AE933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FA7553F1C48CB13004AE933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA755491C48CB13004AE933 /* ViewController.swift in Sources */,
+				8FA755471C48CB13004AE933 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA755531C48CB13004AE933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA7555C1C48CB13004AE933 /* CAC_Covina_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA7555E1C48CB13004AE933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA755671C48CB13004AE933 /* CAC_Covina_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FA755591C48CB13004AE933 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FA755421C48CB13004AE933 /* CAC Covina App */;
+			targetProxy = 8FA755581C48CB13004AE933 /* PBXContainerItemProxy */;
+		};
+		8FA755641C48CB13004AE933 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FA755421C48CB13004AE933 /* CAC Covina App */;
+			targetProxy = 8FA755631C48CB13004AE933 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FA7554A1C48CB13004AE933 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FA7554B1C48CB13004AE933 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FA7554F1C48CB13004AE933 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FA755501C48CB13004AE933 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FA755691C48CB13004AE933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FA7556A1C48CB13004AE933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FA7556C1C48CB13004AE933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CAC Covina App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8FA7556D1C48CB13004AE933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CAC Covina App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8FA7556F1C48CB13004AE933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "CAC Covina AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CAC Covina App.app/CAC Covina App";
+			};
+			name = Debug;
+		};
+		8FA755701C48CB13004AE933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "CAC Covina AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CAC Covina App.app/CAC Covina App";
+			};
+			name = Release;
+		};
+		8FA755721C48CB13004AE933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "CAC Covina AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "CAC Covina App";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8FA755731C48CB13004AE933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "CAC Covina AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "CAC Covina App";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FA7553E1C48CB13004AE933 /* Build configuration list for PBXProject "CAC Covina App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA755691C48CB13004AE933 /* Debug */,
+				8FA7556A1C48CB13004AE933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FA7556B1C48CB13004AE933 /* Build configuration list for PBXNativeTarget "CAC Covina App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA7556C1C48CB13004AE933 /* Debug */,
+				8FA7556D1C48CB13004AE933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8FA7556E1C48CB13004AE933 /* Build configuration list for PBXNativeTarget "CAC Covina AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA7556F1C48CB13004AE933 /* Debug */,
+				8FA755701C48CB13004AE933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8FA755711C48CB13004AE933 /* Build configuration list for PBXNativeTarget "CAC Covina AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA755721C48CB13004AE933 /* Debug */,
+				8FA755731C48CB13004AE933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FA7553B1C48CB13004AE933 /* Project object */;
+}
