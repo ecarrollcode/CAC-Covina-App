@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		8FA755471C48CB13004AE933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA755461C48CB13004AE933 /* AppDelegate.swift */; };
-		8FA755491C48CB13004AE933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA755481C48CB13004AE933 /* ViewController.swift */; };
 		8FA7554C1C48CB13004AE933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA7554A1C48CB13004AE933 /* Main.storyboard */; };
 		8FA7554E1C48CB13004AE933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA7554D1C48CB13004AE933 /* Assets.xcassets */; };
 		8FA755511C48CB13004AE933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA7554F1C48CB13004AE933 /* LaunchScreen.storyboard */; };
 		8FA7555C1C48CB13004AE933 /* CAC_Covina_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7555B1C48CB13004AE933 /* CAC_Covina_AppTests.swift */; };
 		8FA755671C48CB13004AE933 /* CAC_Covina_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA755661C48CB13004AE933 /* CAC_Covina_AppUITests.swift */; };
+		8FA755751C48CBA4004AE933 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA755741C48CBA4004AE933 /* HomeViewController.swift */; };
+		8FA755771C48CC12004AE933 /* cac_new_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FA755761C48CC12004AE933 /* cac_new_logo.png */; };
+		8FA755791C48CDC0004AE933 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA755781C48CDC0004AE933 /* ReportViewController.swift */; };
+		8FA7557B1C48CEA5004AE933 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7557A1C48CEA5004AE933 /* ShareViewController.swift */; };
+		8FA7557D1C48D037004AE933 /* ShareHotlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7557C1C48D037004AE933 /* ShareHotlineViewController.swift */; };
+		8FA7557F1C48E923004AE933 /* ShareCaliHotlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7557E1C48E923004AE933 /* ShareCaliHotlineViewController.swift */; };
+		8FA755811C48F6D0004AE933 /* ReportCaliViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA755801C48F6D0004AE933 /* ReportCaliViewController.swift */; };
+		8FA755831C497B57004AE933 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA755821C497B57004AE933 /* SupportViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,6 @@
 /* Begin PBXFileReference section */
 		8FA755431C48CB13004AE933 /* CAC Covina App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CAC Covina App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA755461C48CB13004AE933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8FA755481C48CB13004AE933 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8FA7554B1C48CB13004AE933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FA7554D1C48CB13004AE933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FA755501C48CB13004AE933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,14 @@
 		8FA755621C48CB13004AE933 /* CAC Covina AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CAC Covina AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA755661C48CB13004AE933 /* CAC_Covina_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAC_Covina_AppUITests.swift; sourceTree = "<group>"; };
 		8FA755681C48CB13004AE933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA755741C48CBA4004AE933 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8FA755761C48CC12004AE933 /* cac_new_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cac_new_logo.png; path = ../../CAC_Covina_logo/cac_new_logo.png; sourceTree = "<group>"; };
+		8FA755781C48CDC0004AE933 /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		8FA7557A1C48CEA5004AE933 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		8FA7557C1C48D037004AE933 /* ShareHotlineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareHotlineViewController.swift; sourceTree = "<group>"; };
+		8FA7557E1C48E923004AE933 /* ShareCaliHotlineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareCaliHotlineViewController.swift; sourceTree = "<group>"; };
+		8FA755801C48F6D0004AE933 /* ReportCaliViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportCaliViewController.swift; sourceTree = "<group>"; };
+		8FA755821C497B57004AE933 /* SupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +112,14 @@
 			isa = PBXGroup;
 			children = (
 				8FA755461C48CB13004AE933 /* AppDelegate.swift */,
-				8FA755481C48CB13004AE933 /* ViewController.swift */,
+				8FA755741C48CBA4004AE933 /* HomeViewController.swift */,
+				8FA755781C48CDC0004AE933 /* ReportViewController.swift */,
+				8FA755801C48F6D0004AE933 /* ReportCaliViewController.swift */,
+				8FA7557A1C48CEA5004AE933 /* ShareViewController.swift */,
+				8FA7557C1C48D037004AE933 /* ShareHotlineViewController.swift */,
+				8FA7557E1C48E923004AE933 /* ShareCaliHotlineViewController.swift */,
+				8FA755821C497B57004AE933 /* SupportViewController.swift */,
+				8FA755761C48CC12004AE933 /* cac_new_logo.png */,
 				8FA7554A1C48CB13004AE933 /* Main.storyboard */,
 				8FA7554D1C48CB13004AE933 /* Assets.xcassets */,
 				8FA7554F1C48CB13004AE933 /* LaunchScreen.storyboard */,
@@ -232,6 +253,7 @@
 				8FA755511C48CB13004AE933 /* LaunchScreen.storyboard in Resources */,
 				8FA7554E1C48CB13004AE933 /* Assets.xcassets in Resources */,
 				8FA7554C1C48CB13004AE933 /* Main.storyboard in Resources */,
+				8FA755771C48CC12004AE933 /* cac_new_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +278,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FA755491C48CB13004AE933 /* ViewController.swift in Sources */,
+				8FA755791C48CDC0004AE933 /* ReportViewController.swift in Sources */,
+				8FA7557F1C48E923004AE933 /* ShareCaliHotlineViewController.swift in Sources */,
+				8FA7557D1C48D037004AE933 /* ShareHotlineViewController.swift in Sources */,
+				8FA7557B1C48CEA5004AE933 /* ShareViewController.swift in Sources */,
+				8FA755831C497B57004AE933 /* SupportViewController.swift in Sources */,
+				8FA755811C48F6D0004AE933 /* ReportCaliViewController.swift in Sources */,
 				8FA755471C48CB13004AE933 /* AppDelegate.swift in Sources */,
+				8FA755751C48CBA4004AE933 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +510,7 @@
 				8FA7556D1C48CB13004AE933 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FA7556E1C48CB13004AE933 /* Build configuration list for PBXNativeTarget "CAC Covina AppTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +519,7 @@
 				8FA755701C48CB13004AE933 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FA755711C48CB13004AE933 /* Build configuration list for PBXNativeTarget "CAC Covina AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +528,7 @@
 				8FA755731C48CB13004AE933 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
