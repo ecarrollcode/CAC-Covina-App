@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import MessageUI
+
 
 class HomeViewController: UIViewController {
     
@@ -15,11 +17,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var linkToYoutube: UIButton!
     @IBOutlet weak var linkToWebsite: UIButton!
     
-    
     //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     //MARK: Actions

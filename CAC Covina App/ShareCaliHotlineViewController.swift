@@ -19,17 +19,14 @@ class ShareCaliHotlineViewController: UIViewController, MFMessageComposeViewCont
     
     //MARK: Variables
     // intialize empty string to be filled with numbers
-    var messageText = ""
-    
-    // initialize variable to access variables in ReportCaliViewController
-    var reportCaliViewController = ReportCaliViewController()
+    var messageText = String()
     
     //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        messageText = "Call this number to report child abuse in Los Angeles county: (800) 540-4000"
-        sendHotline.setTitle("Send hotline", forState: UIControlState.Normal)
+        messageText = "Call this number to report child abuse in Los Angeles county: " + HotlineData.countyDict["Los Angeles"]!
+        sendHotline.setTitle("Send hotline number", forState: UIControlState.Normal)
         statePicker.selectRow(18, inComponent: 0, animated: true)
     }
     
@@ -39,23 +36,20 @@ class ShareCaliHotlineViewController: UIViewController, MFMessageComposeViewCont
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return reportCaliViewController.countyNames.count
+        return HotlineData.countyNames.count
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return reportCaliViewController.countyNames[row]
+        return HotlineData.countyNames[row]
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let itemSelected = reportCaliViewController.countyNames[row]
+        let itemSelected = HotlineData.countyNames[row]
+        let countyDictValue = HotlineData.countyDict[itemSelected]
         
-        for (var i = 1; i < reportCaliViewController.countyNames.count; i++) {
-            if itemSelected == reportCaliViewController.countyNames[i] {
-                sendHotline.setTitle("Send hotline", forState:  UIControlState.Normal)
-                messageText = "Call this number to report child abuse in " + reportCaliViewController.countyNames[i]
-                    + " county: " + reportCaliViewController.countyNums[i];
-            }
-        }
+        sendHotline.setTitle("Send hotline number", forState:  UIControlState.Normal)
+        messageText = "Call this number to report child abuse in " + itemSelected +
+                      " county: " + countyDictValue!
     }
     
     //MARK: Actions
@@ -77,20 +71,16 @@ class ShareCaliHotlineViewController: UIViewController, MFMessageComposeViewCont
     
     //MARK: SMS Message Functions
     func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
-        switch (result.rawValue) {
-        case MessageComposeResultCancelled.rawValue:
+        switch (result) {
+        case .Cancelled:
             print("Message was cancelled")
             self.dismissViewControllerAnimated(true, completion: nil)
-        case MessageComposeResultFailed.rawValue:
+        case .Failed:
             print("Message failed")
             self.dismissViewControllerAnimated(true, completion: nil)
-        case MessageComposeResultSent.rawValue:
+        case .Sent:
             print("Message was sent")
             self.dismissViewControllerAnimated(true, completion: nil)
-        default:
-            break;
         }
     }
-    
-    
 }

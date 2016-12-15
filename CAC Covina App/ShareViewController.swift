@@ -27,8 +27,8 @@ class ShareViewController: UIViewController, MFMessageComposeViewControllerDeleg
         let messageVC = MFMessageComposeViewController()
         
         messageVC.body = "Help fight child abuse. " +
-            "Learn, Report, Support and Share by downloading the Children's Advocacy Center app: " +
-            "https://itunes.apple.com/us/app/childrens-advocacy-center/id1075992273?mt=8";
+                         "Learn, Report, Support and Share by downloading the Children's Advocacy Center app: " +
+                         "https://itunes.apple.com/us/app/childrens-advocacy-center/id1075992273?mt=8";
         messageVC.recipients = [" "];
         messageVC.messageComposeDelegate = self;
         
@@ -37,18 +37,16 @@ class ShareViewController: UIViewController, MFMessageComposeViewControllerDeleg
     
     //MARK: SMS Message Functions
     func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
-        switch (result.rawValue) {
-        case MessageComposeResultCancelled.rawValue:
+        switch (result) {
+        case .Cancelled:
             print("Message was cancelled")
             self.dismissViewControllerAnimated(true, completion: nil)
-        case MessageComposeResultFailed.rawValue:
+        case .Failed:
             print("Message failed")
             self.dismissViewControllerAnimated(true, completion: nil)
-        case MessageComposeResultSent.rawValue:
+        case .Sent:
             print("Message was sent")
             self.dismissViewControllerAnimated(true, completion: nil)
-        default:
-            break;
         }
     }
 }

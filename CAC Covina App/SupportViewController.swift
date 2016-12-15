@@ -53,16 +53,14 @@ class SupportViewController: UIViewController {
         // create and configure alert controller
         let alertController = UIAlertController(title: "(626) 331-6700", message: "", preferredStyle: .Alert)
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
-        }
-        alertController.addAction(cancelAction)
-        
-        let CallAction = UIAlertAction(title: "Call", style: .Default) { (action) in
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        let callAction = UIAlertAction(title: "Call", style: .Default) { (action) in
             UIApplication.sharedApplication().openURL(NSURL(string: "tel://6263316700")!)
         }
-        alertController.addAction(CallAction)
         
-        self.presentViewController(alertController, animated: true) {
-        }
+        alertController.addAction(cancelAction)
+        alertController.addAction(callAction)
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
 }

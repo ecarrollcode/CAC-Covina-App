@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F0B32991DFB44A4009FB266 /* HotlineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B32981DFB44A4009FB266 /* HotlineData.swift */; };
 		8FA755471C48CB13004AE933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA755461C48CB13004AE933 /* AppDelegate.swift */; };
 		8FA7554C1C48CB13004AE933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA7554A1C48CB13004AE933 /* Main.storyboard */; };
 		8FA7554E1C48CB13004AE933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA7554D1C48CB13004AE933 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F0B32981DFB44A4009FB266 /* HotlineData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotlineData.swift; sourceTree = "<group>"; };
 		8FA755431C48CB13004AE933 /* CAC Covina App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CAC Covina App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA755461C48CB13004AE933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FA7554B1C48CB13004AE933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				8FA7557C1C48D037004AE933 /* ShareHotlineViewController.swift */,
 				8FA7557E1C48E923004AE933 /* ShareCaliHotlineViewController.swift */,
 				8FA755821C497B57004AE933 /* SupportViewController.swift */,
+				8F0B32981DFB44A4009FB266 /* HotlineData.swift */,
 				8FA755761C48CC12004AE933 /* cac_new_logo.png */,
 				8FA7554A1C48CB13004AE933 /* Main.storyboard */,
 				8FA7554D1C48CB13004AE933 /* Assets.xcassets */,
@@ -209,18 +212,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Ed Carroll";
 				TargetAttributes = {
 					8FA755421C48CB13004AE933 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4Q43WW846Q;
+						LastSwiftMigration = 0810;
 					};
 					8FA755561C48CB13004AE933 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 						TestTargetID = 8FA755421C48CB13004AE933;
 					};
 					8FA755611C48CB13004AE933 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 						TestTargetID = 8FA755421C48CB13004AE933;
 					};
 				};
@@ -278,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F0B32991DFB44A4009FB266 /* HotlineData.swift in Sources */,
 				8FA755791C48CDC0004AE933 /* ReportViewController.swift in Sources */,
 				8FA7557F1C48E923004AE933 /* ShareCaliHotlineViewController.swift in Sources */,
 				8FA7557D1C48D037004AE933 /* ShareHotlineViewController.swift in Sources */,
@@ -353,8 +361,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -376,11 +386,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -397,8 +408,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -414,9 +427,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -425,10 +440,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "CAC Covina App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -436,10 +453,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "CAC Covina App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -451,6 +470,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CAC Covina App.app/CAC Covina App";
 			};
 			name = Debug;
@@ -463,6 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CAC Covina App.app/CAC Covina App";
 			};
 			name = Release;
@@ -474,6 +495,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = "CAC Covina App";
 				USES_XCTRUNNER = YES;
 			};
@@ -486,6 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = "CAC Covina App";
 				USES_XCTRUNNER = YES;
 			};
