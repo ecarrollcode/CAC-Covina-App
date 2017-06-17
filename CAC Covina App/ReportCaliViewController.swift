@@ -23,50 +23,43 @@ class ReportCaliViewController: UIViewController {
         super.viewDidLoad()
         
         // Initial dial number + selection set for Los Angeles county
-        callButton.setTitle(HotlineData.countyDict["Los Angeles"], forState: UIControlState.Normal)
+        callButton.setTitle(HotlineData.countyDict["Los Angeles"], for: UIControlState())
         countyPicker.selectRow(18, inComponent: 0, animated: true)
     }
     
     //MARK: Picker Functions
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponentsInPickerView(_ pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return HotlineData.countyNames.count
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return HotlineData.countyNames[row]
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let itemSelected = HotlineData.countyNames[row]
         let countyDictValue = HotlineData.countyDict[itemSelected]!
         
-        callButton.setTitle(countyDictValue, forState: UIControlState.Normal)
+        callButton.setTitle(countyDictValue, for: UIControlState())
     }
     
     //MARK: Actions
-    @IBAction func callButton(sender: AnyObject) {
+    @IBAction func callButton(_ sender: Any) {
         
         // removes special characters from string
-        let charSet = NSCharacterSet(charactersInString: "1234567890").invertedSet
+        let charSet = CharacterSet(charactersIn: "1234567890").inverted
         let unformatted = callButton.currentTitle
-        let cleanedString = unformatted!.componentsSeparatedByCharactersInSet(charSet).joinWithSeparator("")
+        let cleanedString = unformatted!.components(separatedBy: charSet).joined(separator: "")
+        let number = URL(string: "tel://" + cleanedString)
         
-        
-        // create and configure alert controller
-        let alertController = UIAlertController(title: unformatted, message: "", preferredStyle: .Alert)
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
-        let CallAction = UIAlertAction(title: "Call", style: .Default) { (action) in
-            UIApplication.sharedApplication().openURL(NSURL(string: "tel://" + cleanedString)!)
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(number!)
+        } else {
+            UIApplication.shared.openURL(number!)
         }
-        
-        alertController.addAction(cancelAction)
-        alertController.addAction(CallAction)
-        
-        self.presentViewController(alertController, animated: true, completion: nil)
     }
 }

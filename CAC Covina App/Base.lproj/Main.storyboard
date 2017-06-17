@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bLn-uv-ylp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bLn-uv-ylp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -46,40 +46,40 @@
                                 </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwx-La-uNO">
-                                <rect key="frame" x="170.5" y="162" width="34" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <rect key="frame" x="167" y="162" width="41" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Learn"/>
                                 <connections>
                                     <action selector="linkToYoutube:" destination="KEy-Za-CIW" eventType="touchUpInside" id="9Mj-9u-fqV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDQ-Og-tZm">
-                                <rect key="frame" x="285.5" y="216" width="52" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <rect key="frame" x="285.5" y="216" width="63" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Services"/>
                                 <connections>
                                     <action selector="linkToWebsite:" destination="KEy-Za-CIW" eventType="touchUpInside" id="t2g-Ka-mtW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDp-D8-Gb9">
-                                <rect key="frame" x="285.5" y="292" width="41" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <rect key="frame" x="285.5" y="296" width="50" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Report"/>
                                 <connections>
                                     <segue destination="IL5-Di-1My" kind="show" id="vd9-0z-4NO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdR-JM-QmW">
-                                <rect key="frame" x="40.5" y="216" width="49" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <rect key="frame" x="30.5" y="216" width="59" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Support"/>
                                 <connections>
                                     <segue destination="xGA-0l-bvg" kind="show" id="PAW-R8-2GT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVq-aQ-R5o">
-                                <rect key="frame" x="54.5" y="292" width="35" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <rect key="frame" x="47.5" y="296" width="42" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Share"/>
                                 <connections>
                                     <segue destination="TfR-TG-VdO" kind="show" id="4ma-et-aaM"/>
@@ -181,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgs-af-ucy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="973" y="252.75"/>
+            <point key="canvasLocation" x="991" y="252"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xkr-gq-9rr">
@@ -199,7 +199,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ldf-rL-2lK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="161" y="252.75"/>
+            <point key="canvasLocation" x="103" y="224"/>
         </scene>
         <!--Report-->
         <scene sceneID="srl-IV-PAn">
@@ -312,6 +312,11 @@
                                 <state key="normal" title="Share this app">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="shareApp:" destination="TfR-TG-VdO" eventType="touchUpInside" id="bc5-sf-mtZ"/>
                                 </connections>
@@ -323,6 +328,9 @@
                                 <state key="normal" title="Share a hotline">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="RXE-yu-qUa" kind="show" id="FV4-Gu-Atd"/>
                                 </connections>

@@ -18,7 +18,7 @@ class ShareViewController: UIViewController, MFMessageComposeViewControllerDeleg
     
     //MARK: Actions
     // add sms functionality to share app
-    @IBAction func shareApp(sender: AnyObject) {
+    @IBAction func shareApp(_ sender: Any) {
         if MFMessageComposeViewController.canSendText() == false {
             print("Cannot send text")
             return
@@ -32,21 +32,21 @@ class ShareViewController: UIViewController, MFMessageComposeViewControllerDeleg
         messageVC.recipients = [" "];
         messageVC.messageComposeDelegate = self;
         
-        self.presentViewController(messageVC, animated: false, completion: nil)
+        self.present(messageVC, animated: false, completion: nil)
     }
     
     //MARK: SMS Message Functions
-    func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
         switch (result) {
-        case .Cancelled:
+        case .cancelled:
             print("Message was cancelled")
-            self.dismissViewControllerAnimated(true, completion: nil)
-        case .Failed:
+            self.dismiss(animated: true, completion: nil)
+        case .failed:
             print("Message failed")
-            self.dismissViewControllerAnimated(true, completion: nil)
-        case .Sent:
+            self.dismiss(animated: true, completion: nil)
+        case .sent:
             print("Message was sent")
-            self.dismissViewControllerAnimated(true, completion: nil)
+            self.dismiss(animated: true, completion: nil)
         }
     }
 }

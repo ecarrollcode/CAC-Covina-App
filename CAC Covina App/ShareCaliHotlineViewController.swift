@@ -26,34 +26,34 @@ class ShareCaliHotlineViewController: UIViewController, MFMessageComposeViewCont
         super.viewDidLoad()
         
         messageText = "Call this number to report child abuse in Los Angeles county: " + HotlineData.countyDict["Los Angeles"]!
-        sendHotline.setTitle("Send hotline number", forState: UIControlState.Normal)
+        sendHotline.setTitle("Send hotline number", for: UIControlState())
         statePicker.selectRow(18, inComponent: 0, animated: true)
     }
     
     //MARK: Picker Functions
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponentsInPickerView(_ pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return HotlineData.countyNames.count
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return HotlineData.countyNames[row]
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let itemSelected = HotlineData.countyNames[row]
         let countyDictValue = HotlineData.countyDict[itemSelected]
         
-        sendHotline.setTitle("Send hotline number", forState:  UIControlState.Normal)
+        sendHotline.setTitle("Send hotline number", for:  UIControlState())
         messageText = "Call this number to report child abuse in " + itemSelected +
                       " county: " + countyDictValue!
     }
     
     //MARK: Actions
-    @IBAction func sendHotline(sender: AnyObject) {
+    @IBAction func sendHotline(_ sender: Any) {
         
         if MFMessageComposeViewController.canSendText() == false {
             print("Cannot send text")
@@ -66,21 +66,21 @@ class ShareCaliHotlineViewController: UIViewController, MFMessageComposeViewCont
         messageVC.recipients = [" "];
         messageVC.messageComposeDelegate = self;
         
-        self.presentViewController(messageVC, animated: false, completion: nil)
+        self.present(messageVC, animated: false, completion: nil)
     }
     
     //MARK: SMS Message Functions
-    func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
         switch (result) {
-        case .Cancelled:
+        case .cancelled:
             print("Message was cancelled")
-            self.dismissViewControllerAnimated(true, completion: nil)
-        case .Failed:
+            self.dismiss(animated: true, completion: nil)
+        case .failed:
             print("Message failed")
-            self.dismissViewControllerAnimated(true, completion: nil)
-        case .Sent:
+            self.dismiss(animated: true, completion: nil)
+        case .sent:
             print("Message was sent")
-            self.dismissViewControllerAnimated(true, completion: nil)
+            self.dismiss(animated: true, completion: nil)
         }
     }
 }

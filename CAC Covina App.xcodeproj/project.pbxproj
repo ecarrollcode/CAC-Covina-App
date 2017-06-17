@@ -218,16 +218,16 @@
 					8FA755421C48CB13004AE933 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 4Q43WW846Q;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0830;
 					};
 					8FA755561C48CB13004AE933 = {
 						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0830;
 						TestTargetID = 8FA755421C48CB13004AE933;
 					};
 					8FA755611C48CB13004AE933 = {
 						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0830;
 						TestTargetID = 8FA755421C48CB13004AE933;
 					};
 				};
@@ -445,7 +445,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -458,7 +458,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -470,7 +470,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CAC Covina App.app/CAC Covina App";
 			};
 			name = Debug;
@@ -483,7 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CAC Covina App.app/CAC Covina App";
 			};
 			name = Release;
@@ -495,7 +495,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "CAC Covina App";
 				USES_XCTRUNNER = YES;
 			};
@@ -508,7 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.CAC-Covina-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "CAC Covina App";
 				USES_XCTRUNNER = YES;
 			};

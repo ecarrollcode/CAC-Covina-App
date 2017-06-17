@@ -26,69 +26,68 @@ class ReportViewController: UIViewController, UIPickerViewDelegate {
         
         // initial dial number + selection set for California
         isCalifornia = true
-        callOrUrlButton.setTitle("Select a county", forState: UIControlState.Normal)
+        callOrUrlButton.setTitle("Select a county", for: UIControlState())
         statePicker.selectRow(4, inComponent: 0, animated: true)
     }
     
     //MARK: Picker Functions
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponentsInPickerView(_ pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return HotlineData.stateNames.count
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return HotlineData.stateNames[row]
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let itemSelected = HotlineData.stateNames[row]
         let phoneDictValue = HotlineData.stateInfosPhoneDict[itemSelected]
         let webDictValue = HotlineData.stateInfosWebDict[itemSelected]
         
         isCalifornia = false // assume California is not selected
         if (itemSelected == "California") {
-            callOrUrlButton.setTitle("Select a county", forState: UIControlState.Normal)
+            callOrUrlButton.setTitle("Select a county", for: UIControlState())
             isCalifornia = true // used to trigger segue in callOrUrlButton action
         } else if (phoneDictValue != nil) {
-            callOrUrlButton.setTitle(phoneDictValue, forState: UIControlState.Normal)
+            callOrUrlButton.setTitle(phoneDictValue, for: UIControlState())
             urlString.removeAll()
         } else if (webDictValue != nil) {
-            callOrUrlButton.setTitle("See hotline list", forState: UIControlState.Normal)
+            callOrUrlButton.setTitle("See hotline list", for: UIControlState())
             urlString = webDictValue!
         }
     }
 
     //MARK: Actions
-    @IBAction func callOrUrlButton(sender: AnyObject) {
+    @IBAction func callOrUrlButton(_ sender: Any) {
         
         if isCalifornia {
-            self.performSegueWithIdentifier("reportCaliSegue", sender: nil)
+            self.performSegue(withIdentifier: "reportCaliSegue", sender: nil)
             return
         }
         
         // removes special characters from string
-        let charSet = NSCharacterSet(charactersInString: "1234567890").invertedSet
+        let charSet = CharacterSet(charactersIn: "1234567890").inverted
         let unformatted = callOrUrlButton.currentTitle
-        let cleanedString = unformatted!.componentsSeparatedByCharactersInSet(charSet).joinWithSeparator("")
+        let cleanedString = unformatted!.components(separatedBy: charSet).joined(separator: "")
+        let number = URL(string: "tel://" + cleanedString)
         
-        // create and configure alert controller
-        let alertController = UIAlertController(title: unformatted, message: "", preferredStyle: .Alert)
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
-        let callAction = UIAlertAction(title: "Call", style: .Default) { (action) in
-            UIApplication.sharedApplication().openURL(NSURL(string: "tel://" + cleanedString)!)
-        }
-        
-        alertController.addAction(cancelAction)
-        alertController.addAction(callAction)
-        
-        if urlString.isEmpty {
-            self.presentViewController(alertController, animated: true, completion: nil)
+        if !urlString.isEmpty {
+            let url = NSURL(string: self.urlString)! as URL
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
         } else {
-            UIApplication.sharedApplication().openURL(NSURL(string: urlString)!)
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(number!)
+            } else {
+                UIApplication.shared.openURL(number!)
+            }
         }
     }
 }

@@ -44,7 +44,7 @@ struct HotlineData {
                                     "Wisconsin": "http://dcf.wi.gov/reportabuse"]
     
     // used to populate state picker
-    static let stateNames = (Array(stateInfosPhoneDict.keys) + Array(stateInfosWebDict.keys)).sort()
+    static let stateNames = (Array(stateInfosPhoneDict.keys) + Array(stateInfosWebDict.keys)).sorted()
     
     // dict of California counties with hotlines
     static let countyDict = ["Alameda": "(510) 259-1800", "Alpine": "(530) 694-2235", "Amador": "(209) 223-6550",
@@ -69,6 +69,6 @@ struct HotlineData {
                              "Yuba": "(530) 749-6288"]
     
     // used to populate California county picker
-    static let countyNames = Array(countyDict.keys).sort()
+    static let countyNames = Array(countyDict.keys).sorted()
 }
 

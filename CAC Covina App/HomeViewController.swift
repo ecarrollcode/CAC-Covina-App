@@ -23,14 +23,13 @@ class HomeViewController: UIViewController {
     }
     
     //MARK: Actions
-    @IBAction func linkToYoutube(sender: AnyObject) {
+    @IBAction func linkToYoutube(_ sender: Any) {
         // link to YouTube channel
-        UIApplication.sharedApplication().openURL(NSURL(string: "https://www.youtube.com/channel/UCyLMpGZaNlrtdBnwp4kGSCQ")!)
+        UIApplication.shared.openURL(URL(string: "https://www.youtube.com/channel/UCyLMpGZaNlrtdBnwp4kGSCQ")!)
     }
     
-    
-    @IBAction func linkToWebsite(sender: AnyObject) {
+    @IBAction func linkToWebsite(_ sender: Any) {
         // link to website
-        UIApplication.sharedApplication().openURL(NSURL(string: "http://childrensadvocacyctr.org/services")!)
+        UIApplication.shared.openURL(URL(string: "http://childrensadvocacyctr.org/services")!)
     }
 }
